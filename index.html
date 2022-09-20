@@ -9,9 +9,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<style>
+.jumbotron {
+  background-image: url("https://www.mcgill.ca/newsroom/files/newsroom/channels/image/human-microbiome.jpg");
+  background-size: cover;
+  color: #FFFFFF;
+}
 
-  <div class="container">
+body {
+  background-color: #8adfe3
+}
+
+.well {
+  background-color: transparent;
+  border: black;
+  border-width: 1px;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+.panel{
+  background-color: transparent;
+  border: black;
+  border-width: 1px;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+.panel-heading{
+  background-color: white;
+  border-radius: 10px;
+}
+</style>
+
+<body>
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-18 col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
@@ -20,11 +52,11 @@
     </div>
     <div class="row">
       <div class="col-xs-3 col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <div class="well well-lg">
+          <h4 id="sample-id">Test Subject ID No.:</h4>
+          <select id="selDataset" class="form-control input" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
