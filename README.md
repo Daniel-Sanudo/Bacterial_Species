@@ -4,7 +4,7 @@ This repository contains a visualization of a given dataset about bacterial biod
 
 ## Overview
 
-[index](/images/Github_page_landing.png)
+![index](/images/Github_page_landing.png)
 
 The visualization dashboard consists of a Test ID No drop down menu selection, a panel with the demographic information of the chosen Test Subject ID and 3 different graphs.
 
